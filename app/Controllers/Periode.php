@@ -26,4 +26,23 @@ class Periode extends ResourceController
 
         return $this->respondCreated($data);
     }
+
+    public function ubahdata($id = null)
+    {
+        $model = new PeriodeM();
+        $id = $this->request->getVar('id');
+        $data = $this->request->getJSON();
+        $model->update($id, $data);
+
+        return $this->respondUpdated($data);
+    }
+
+    public function hapusdata($id = null)
+    {
+
+        $model = new PeriodeM();
+        $data = $model->delete($id);
+
+        return $this->respondDeleted($data);
+    }
 }

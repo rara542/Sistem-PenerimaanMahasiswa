@@ -38,8 +38,10 @@ $routes->resource('Users');
 $routes->resource('Users/tambahdata');
 $routes->resource('Periode');
 $routes->resource('Periode/tambahdata');
+$routes->resource('Periode/ubahdata');
 $routes->resource('Jurusan');
 $routes->resource('Jurusan/tambahdata');
+$routes->resource('Jurusau/ubahdata');
 
 /*
  * --------------------------------------------------------------------
