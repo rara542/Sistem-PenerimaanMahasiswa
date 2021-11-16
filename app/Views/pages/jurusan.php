@@ -9,13 +9,13 @@
                     <div class="col-6">
                         <ul class="list-group">
                             <li class="list-group-item bg-primary text-white">Kode Perguruan Tinggi</li>
-                            <li class="list-group-item">098989</li>
+                            <li class="list-group-item"></li>
                         </ul>
                     </div>
                     <div class="col-6">
                     <ul class="list-group">
                                 <li class="list-group-item bg-primary text-white">Nama Perguruan Tinggi</li>
-                                <li class="list-group-item">STIMIK SEPULUH NOPEMBER JAYAPURA</li>
+                                <li class="list-group-item"></li>
                             </ul>
                     </div>
                 </div>
@@ -23,15 +23,13 @@
                     <div class="col-6">
                     <ul class="list-group">
                             <li class="list-group-item bg-primary text-white">Kode Program Studi</li>
-                            <li class="list-group-item">098989</li>
-                            <li class="list-group-item">898171</li>
+                            <li class="list-group-item"></li>
                         </ul>
                     </div>
                     <div class="col-6">
                         <ul class="list-group">
                             <li class="list-group-item bg-primary text-white">Nama Program Studi</li>
-                            <li class="list-group-item">Teknik Informatika</li>
-                            <li class="list-group-item">Sistem Informasi</li>
+                            <li class="list-group-item"></li>
                         </ul>
                     </div>
                 </div>
@@ -39,13 +37,13 @@
                     <div class="col-6">
                         <ul class="list-group">
                             <li class="list-group-item bg-primary text-white">Status</li>
-                            <li class="list-group-item">STIMIK SEPULUH NOPEMBER JAYAPURA</li>
+                            <li class="list-group-item"></li>
                         </ul>
                     </div>
                     <div class="col-6">
                         <ul class="list-group">
                             <li class="list-group-item bg-primary text-white">Nama Jenjang Pendidikan</li>
-                            <li class="list-group-item">STIMIK SEPULUH NOPEMBER JAYAPURA</li>
+                            <li class="list-group-item"></li>
                         </ul>
                     </div>
                 </div>
