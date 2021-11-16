@@ -12,6 +12,14 @@ class Jurusan extends ResourceController
     use RequestTrait;
     public function index()
     {
+      $data = [
+        'title' => 'Jurusan',
+        'page' => 'Jurusan'
+    ];
+    return view('pages/jurusan', $data);
+    }
+    public function get()
+    {
         $model = new JurusanM();
         $data = $model->findAll();
         return $this->respond($data,200);

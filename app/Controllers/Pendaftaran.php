@@ -14,9 +14,9 @@ class Pendaftaran extends ResourceController
     {
         $data = [
             'title' => 'Pendaftaran',
-            'page' => 'Daftar Mahasiswa'
+            'page' => 'Pendaftaran Mahasiswa Baru'
         ];
-        return view('pages/mahasiswa', $data);
+        return view('pages/pendaftaran', $data);
     }
 
     public function get()

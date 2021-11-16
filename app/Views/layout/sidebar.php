@@ -33,7 +33,7 @@
                     <span>Mahasiswa</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="<?= base_url('/jurusan'); ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Jurusan</span></a>
             </li>
