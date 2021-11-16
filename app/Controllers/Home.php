@@ -6,6 +6,10 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('beranda_vw');
+        $data = [
+            'title' => 'Dashboard',
+            'page' => 'Dashboard'
+        ];
+        return view('template/index', $data);
     }
 }

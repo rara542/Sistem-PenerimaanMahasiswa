@@ -28,7 +28,7 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item active">
-                <a class="nav-link" href="<?= base_url('/mahasiswacontroller'); ?>">
+                <a class="nav-link" href="<?= base_url('/mahasiswa'); ?>">
                     <i class="fas fa-users"></i>
                     <span>Mahasiswa</span></a>
             </li>
