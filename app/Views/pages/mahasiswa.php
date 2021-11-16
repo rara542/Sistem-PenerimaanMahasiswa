@@ -9,7 +9,11 @@
                     <tr>
                         <th>No</th>
                         <th>Nama</th>
-                        <th>Asal Sekolah</th>
+                        <th>Tempat/Tanggal lahir</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Agama</th>
+                        <th>No Telp</th>
+                        <th>Aksi</th>
                     </tr>
                 </thead>
             </table>

@@ -8,7 +8,7 @@ class Mahasiswa extends BaseController
     {
         $data = [
             'title' => 'Mahasiswa',
-            'page' => 'Daftar Mahasiswwa'
+            'page' => 'Daftar Mahasiswa'
         ];
         return view('pages/mahasiswa', $data);
     }

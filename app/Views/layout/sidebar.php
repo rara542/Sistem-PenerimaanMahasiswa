@@ -38,7 +38,7 @@
                     <span>Jurusan</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="<?= base_url('/pendaftaran'); ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Pendaftaran</span></a>
             </li>

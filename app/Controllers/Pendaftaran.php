@@ -12,10 +12,20 @@ class Pendaftaran extends ResourceController
     use RequestTrait;
     public function index()
     {
+        $data = [
+            'title' => 'Pendaftaran',
+            'page' => 'Daftar Mahasiswa'
+        ];
+        return view('pages/mahasiswa', $data);
+    }
+
+    public function get()
+    {
         $model = new PendaftaranM(); 
         $data = $model->findAll();
         return $this->respond($data,200);
     }
+
     public function tambahdata()
     {
 
