@@ -13,7 +13,7 @@ class Pendaftaran extends ResourceController
     public function index()
     {
         $data = [
-            'title' => 'Pendaftaran',
+            'title' => 'Pendaftaran'
             // 'page' => 'Pendaftaran Mahasiswa Baru'
         ];
         return view('siswa/pendaftaran', $data);
@@ -21,9 +21,9 @@ class Pendaftaran extends ResourceController
 
     public function get()
     {
-        $model = new PendaftaranM(); 
+        $model = new PendaftaranM();
         $data = $model->findAll();
-        return $this->respond($data,200);
+        return $this->respond($data, 200);
     }
 
     public function tambahdata()
@@ -36,6 +36,4 @@ class Pendaftaran extends ResourceController
 
         return $this->respondCreated($data);
     }
-
-    
 }

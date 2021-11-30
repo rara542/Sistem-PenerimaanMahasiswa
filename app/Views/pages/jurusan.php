@@ -13,15 +13,15 @@
                         </ul>
                     </div>
                     <div class="col-6">
-                    <ul class="list-group">
-                                <li class="list-group-item bg-primary text-white">Nama Perguruan Tinggi</li>
-                                <li class="list-group-item"></li>
-                            </ul>
+                        <ul class="list-group">
+                            <li class="list-group-item bg-primary text-white">Nama Perguruan Tinggi</li>
+                            <li class="list-group-item"></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="row mb-4">
                     <div class="col-6">
-                    <ul class="list-group">
+                        <ul class="list-group">
                             <li class="list-group-item bg-primary text-white">Kode Program Studi</li>
                             <li class="list-group-item"></li>
                         </ul>
