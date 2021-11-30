@@ -32,19 +32,19 @@
                     <i class="fas fa-users"></i>
                     <span>Mahasiswa</span></a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="<?= base_url('/jurusan'); ?>">
+            <!-- <li class="nav-item active">
+                <a class="nav-link" href="#">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Jurusan</span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="<?= base_url('/pendaftaran'); ?>">
+                <a class="nav-link" href="#">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Pendaftaran</span></a>
-            </li>
+            </li> -->
             <li class="nav-item active">
                 <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <i class="fas fa-fw fa-calendar-alt"></i>
                     <span>Periode</span></a>
             </li>
 
