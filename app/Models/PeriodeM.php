@@ -14,10 +14,10 @@ class PeriodeM extends Model
     protected $returnType           = 'array';
     protected $useSoftDeletes       = false;
     protected $protectFields        = true;
-    protected $allowedFields        = ['id_token', 'act', 'filter', 'limit', 'offset'];
+    protected $allowedFields        = ['periode', 'tanggal_buka', 'tanggal_tutup', 'status'];
 
     // Dates
-    protected $useTimestamps        = false;
+    protected $useTimestamps        = true;
     protected $dateFormat           = 'datetime';
     protected $createdField         = 'created_at';
     protected $updatedField         = 'updated_at';

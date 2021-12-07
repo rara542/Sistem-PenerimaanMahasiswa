@@ -42,6 +42,7 @@ $routes->resource('Periode/ubahdata');
 $routes->resource('Jurusan');
 $routes->resource('Jurusan/tambahdata');
 $routes->resource('Jurusau/ubahdata');
+$routes->get('periode', 'Periode::index');
 
 /*
  * --------------------------------------------------------------------

@@ -3,31 +3,36 @@
 namespace App\Controllers;
 
 use CodeIgniter\RESTful\ResourceController;
-use CodeIgniter\API\ResponseTrait;
 use App\Models\PeriodeM;
-use CodeIgniter\HTTP\RequestTrait;
 
 class Periode extends ResourceController
 {
-    use RequestTrait;
+    public function __construct()
+    {
+        $this->periode = new PeriodeM();
+    }
     public function index()
     {
-        $model = new PeriodeM();
-        $data = $model->findAll();
-        return $this->respond($data,200);
-    }
-    public function tambahdata()
-    {
+        $data['title'] = "Periode";
+        $data['page'] = "Daftar Mahasiswa";
 
+        return view('pages/periode', $data);
+    }
+    public function read()
+    {
+        return $this->respond($this->periode->WHERE('deleted_at', null)->findAll());
+    }
+    public function post()
+    {
         $model = new PeriodeM();
         $data = $this->request->getJSON();
 
-         $model->insert($data);
+        $model->insert($data);
 
         return $this->respondCreated($data);
     }
 
-    public function ubahdata($id = null)
+    public function put($id = null)
     {
         $model = new PeriodeM();
         $id = $this->request->getVar('id');
@@ -37,7 +42,7 @@ class Periode extends ResourceController
         return $this->respondUpdated($data);
     }
 
-    public function hapusdata($id = null)
+    public function delete($id = null)
     {
 
         $model = new PeriodeM();

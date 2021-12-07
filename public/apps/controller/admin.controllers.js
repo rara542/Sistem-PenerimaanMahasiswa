@@ -1,10 +1,18 @@
 angular.module("admin.controllers", [])
-.controller("tahapanController", tahapanController);
+    .controller("periodeController", periodeController);
 
-function tahapanController($scope, tahapanServices) {
+function periodeController($scope, periodeServices) {
     $scope.datas = [];
-    tahapanServices.get().then(res=>{
+    $scope.model = {};
+    periodeServices.get().then(res => {
         $scope.datas = res;
         console.log(res);
+    })
+
+    $scope.save = (item) => {
+        periodeServices.post(item).then((res) => {
+            $scope.model = {};
+            $("#tambah").modal("hide");
+        }
     })
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" an-app="apps">
+<html lang="en" ng-app="apps">
 
 <head>
 
@@ -66,11 +66,12 @@
     <!-- Page level custom scripts -->
     <script src="assets/js/demo/chart-pie-demo.js"></script>
     <script src="assets/js/demo/chart-area-demo.js"></script>
-    <script src="assets/dist/angular.min.js"></script>
+    <script src="assets/vendor/angular/angular.min.js"></script>
     <script src="apps/apps.js"></script>
-    <script src="apps/controller/atmin.controllers.js"></script>
-    <script src="apps/service/admin.service.js"></script>
-    <script src="apps/service/helperService.js"></script>
+    <script src="apps/controller/admin.controllers.js"></script>
+    <script src="apps/services/admin.services.js"></script>
+    <script src="apps/services/helperServices.js"></script>
+    <script src="assets/js/locale.js"></script>
 
 </body>
 

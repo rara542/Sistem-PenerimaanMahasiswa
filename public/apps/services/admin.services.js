@@ -1,12 +1,12 @@
-angular.module('admin.services',[])
-.factory("tahapanServices", tahapanServices);
+angular.module('admin.services', [])
+    .factory("periodeServices", periodeServices);
 
-function tahapanServices($http, $q, helperServices) {
-    var controller = helperServices.url + 'tahapan/';
+function periodeServices($http, $q, helperServices) {
+    var controller = helperServices.url + 'periode/';
     var service = {}
     service.data = [];
     return {
-        get:get, post:post, put:put, deleted:deleted
+        get: get, post: post, put: put, deleted: deleted
     }
 
     function get() {
@@ -14,11 +14,11 @@ function tahapanServices($http, $q, helperServices) {
         $http({
             method: 'get',
             url: controller + "/read",
-            headers: {'Content-Type': 'application/json'}
-        }).then((res)=>{
+            headers: { 'Content-Type': 'application/json' }
+        }).then((res) => {
             service.data = res.data;
             def.resolve(res.data)
-        },(err)=>{
+        }, (err) => {
             def.reject(err);
         })
         return def.promise;
@@ -29,11 +29,11 @@ function tahapanServices($http, $q, helperServices) {
             method: 'post',
             url: controller + "/post",
             data: param,
-            headers: {'Content-Type': 'application/json'}
-        }).then((res)=>{
-            service.data.push(res,data);
+            headers: { 'Content-Type': 'application/json' }
+        }).then((res) => {
+            service.data.push(res, data);
             def.resolve(res.data)
-        },(err)=>{
+        }, (err) => {
             def.reject(err);
         })
         return def.promise;
@@ -42,13 +42,13 @@ function tahapanServices($http, $q, helperServices) {
         var def = $q.defer();
         $http({
             method: 'put',
-            url: controller + "/put/"+param.id,
+            url: controller + "/put/" + param.id,
             data: param,
-            headers: {'Content-Type': 'application/json'}
-        }).then((res)=>{
+            headers: { 'Content-Type': 'application/json' }
+        }).then((res) => {
             service.data = res.data;
             def.resolve(res.data)
-        },(err)=>{
+        }, (err) => {
             def.reject(err);
         })
         return def.promise;
@@ -57,12 +57,12 @@ function tahapanServices($http, $q, helperServices) {
         var def = $q.defer();
         $http({
             method: 'get',
-            url: controller + "/delete/"+param.id,
-            headers: {'Content-Type': 'application/json'}
-        }).then((res)=>{
+            url: controller + "/delete/" + param.id,
+            headers: { 'Content-Type': 'application/json' }
+        }).then((res) => {
             service.data = res.data;
             def.resolve(res.data)
-        },(err)=>{
+        }, (err) => {
             def.reject(err);
         })
         return def.promise;
