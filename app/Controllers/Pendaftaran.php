@@ -2,10 +2,9 @@
 
 namespace App\Controllers;
 
-use CodeIgniter\RESTful\ResourceController;
-use CodeIgniter\API\ResponseTrait;
 use App\Models\PendaftaranM;
 use CodeIgniter\HTTP\RequestTrait;
+use CodeIgniter\RESTful\ResourceController;
 
 class Pendaftaran extends ResourceController
 {
@@ -13,7 +12,7 @@ class Pendaftaran extends ResourceController
     public function index()
     {
         $data = [
-            'title' => 'Pendaftaran'
+            'title' => 'Pendaftaran',
             // 'page' => 'Pendaftaran Mahasiswa Baru'
         ];
         return view('siswa/pendaftaran', $data);
