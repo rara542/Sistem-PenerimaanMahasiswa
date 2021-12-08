@@ -1,5 +1,5 @@
-<?= $this->extend('template/index'); ?>
-<?= $this->section('content'); ?>
+<?=$this->extend('template/index');?>
+<?=$this->section('content');?>
 <div ng-controller="periodeController">
     <button type="button" class="btn btn-primary btn-sm mb-2" data-toggle="modal" data-target="#modelId">
         Tambah
@@ -55,11 +55,8 @@
                                 <option value="">Ditutup</option>
                             </select>
                         </div>
-                        
-                        <!-- <div class="form-group">
-                            <label for="">Nama</label>
-                            <input class="form-control" type="text" placeholder="Nama">
-                        </div> -->
+
+
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -71,4 +68,4 @@
     </div>
 </div>
 
-<?= $this->endSection(); ?>
+<?=$this->endSection();?>

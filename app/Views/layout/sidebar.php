@@ -28,7 +28,7 @@
 
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item active">
-        <a class="nav-link" href="<?= base_url('/mahasiswa'); ?>">
+        <a class="nav-link" href="<?=base_url('/mahasiswa');?>">
             <i class="fas fa-users"></i>
             <span>Mahasiswa</span></a>
     </li>
@@ -43,7 +43,7 @@
                     <span>Pendaftaran</span></a>
             </li> -->
     <li class="nav-item active">
-        <a class="nav-link" href="<?= base_url('/sis'); ?>">
+        <a class="nav-link" href="<?=base_url('/periode');?>">
             <i class="fas fa-fw fa-calendar-alt"></i>
             <span>Periode</span></a>
     </li>

@@ -2,8 +2,8 @@
 
 namespace App\Controllers;
 
-use CodeIgniter\RESTful\ResourceController;
 use App\Models\PeriodeM;
+use CodeIgniter\RESTful\ResourceController;
 
 class Periode extends ResourceController
 {
